@@ -1,0 +1,5 @@
+obj-m := hello_driver.o
+KDIR := /usr/src/linux-headers=5.8.0-44-generic
+
+lt:
+	$(MAKE) -C $(KDIR) SUBDIRS=$(PWD) modules
